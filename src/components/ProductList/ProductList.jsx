@@ -5,14 +5,17 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая'},
-    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
-    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
+    {id: '1', title: 'Салат «Крабовый с рисом»', price: 50, description: '150г'},
+    {id: '2', title: 'Салат «Оливье с ветчиной»', price: 60, description: '150г'},
+    {id: '3', title: 'Сельдь с картофелем', price: 70, description: '150г'},
+    {id: '4', title: 'Бульон говяжий с гренками', price: 50, description: '250г'},
+    {id: '5', title: 'Борщ с говядиной', price: 70, description: '250г'},
+    {id: '6', title: 'Тефтели мясные в сливочно-томатном соусе', price: 120, description: '150г'},
+    {id: '7', title: 'Филе куриное под сыром и майонезом', price: 140, description: '150г'},
+    {id: '8', title: 'Гречка отварная', price: 25, description: '200г'},
+    {id: '9', title: 'Макароны отварные', price: 25, description: '200г'},
+    {id: '10', title: 'Компот из ягод', price: 20, description: '200мл'},
+    {id: '11', title: 'Сок мультифруктовый', price: 35, description: '200мл'},
 ]
 
 const getTotalPrice = (items = []) => {
